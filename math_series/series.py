@@ -2,7 +2,16 @@ def fibonacci_recursive(num):
     """
     should return the nth value in the fibonacci series
     """
-    pass
+
+    if type(num) != int or num < 0:
+        return None
+
+    if num == 0:
+        return 0
+    if num == 1:
+        return 1
+
+    return fibonacci_recursive(num - 1) + fibonacci_recursive(num - 2)
 
 
 def lucas_recursive(num):

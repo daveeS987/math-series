@@ -28,7 +28,7 @@ def test_fibonacci_recursive_should_return_third_element():
 
 def test_fibonacci_recursive_should_return_tenth_element():
     actual = fibonacci_recursive(10)
-    expected = 1
+    expected = 55
     assert actual == expected
 
 
@@ -58,7 +58,7 @@ def test_fibonacci_recursive_should_return_none_for_type_dictionary():
 
 # ---------------------- Lucas ----------------------
 
-
+"""
 def test_lucas_recursive_should_return_first_element():
     actual = lucas_recursive(0)
     expected = 2
@@ -156,3 +156,5 @@ def test_sum_series_recursive_should_return_none_for_type_dictionary():
     actual = sum_series_recursive({"a": "a string", "b": "another string"})
     expected = None
     assert actual == expected
+
+"""
