@@ -41,7 +41,7 @@ def sum_series_recursive(num, a=0, b=1):
     if num == 1:
         return b
 
-    return sum_series_recursive(num - 1) + sum_series_recursive(num - 2)
+    return sum_series_recursive(num - 1, a, b) + sum_series_recursive(num - 2, a, b)
 
 
 # def fibonacci_iterative(num):
@@ -61,3 +61,18 @@ def sum_series_recursive(num, a=0, b=1):
 
 # def sum_series_iterative(num, a=0, b=1):
 #     pass
+
+
+if __name__ == "__main__":
+
+    print("--------fibonacci_recursive----------")
+    for i in range(12):
+        print(fibonacci_recursive(i))
+
+    print("--------lucas_recursive----------")
+    for i in range(12):
+        print(lucas_recursive(i))
+
+    print("--------sum_series_recursive--2--1------")
+    for i in range(12):
+        print(sum_series_recursive(i, 2, 1))
