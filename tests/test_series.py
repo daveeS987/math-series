@@ -109,7 +109,7 @@ def test_lucas_recursive_should_return_none_for_type_dictionary():
 
 # ---------------------- sum_series ----------------------
 
-"""
+
 def test_sum_series_recursive_should_return_first_element():
     actual = sum_series_recursive(0)
     expected = 0
@@ -128,9 +128,9 @@ def test_sum_series_recursive_should_return_third_element():
     assert actual == expected
 
 
-def test_sum_series_recursive_should_return_tenth_element():
-    actual = sum_series_recursive(10)
-    expected = 1
+def test_sum_series_recursive_should_return_twelfth_element():
+    actual = sum_series_recursive(12)
+    expected = 144
     assert actual == expected
 
 
@@ -156,5 +156,3 @@ def test_sum_series_recursive_should_return_none_for_type_dictionary():
     actual = sum_series_recursive({"a": "a string", "b": "another string"})
     expected = None
     assert actual == expected
-
-"""
