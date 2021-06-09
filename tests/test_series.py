@@ -134,8 +134,32 @@ def test_sum_series_recursive_should_return_twelfth_element():
     assert actual == expected
 
 
+def test_sum_series_recursive_should_return_first_element_if_input_2_1():
+    actual = sum_series_recursive(0, 2, 1)
+    expected = 2
+    assert actual == expected
+
+
+def test_sum_series_recursive_should_return_second_element_if_input_2_1():
+    actual = sum_series_recursive(1, 2, 1)
+    expected = 1
+    assert actual == expected
+
+
+def test_sum_series_recursive_should_return_third_element_if_input_2_1():
+    actual = sum_series_recursive(2, 2, 1)
+    expected = 3
+    assert actual == expected
+
+
+def test_sum_series_recursive_should_return_tenth_element_if_input_2_1():
+    actual = sum_series_recursive(10, 2, 1)
+    expected = 123
+    assert actual == expected
+
+
 def test_sum_series_recursive_should_return_none_for_negative_numbers():
-    actual = sum_series_recursive(-5)
+    actual = sum_series_recursive(-5, 2, 1)
     expected = None
     assert actual == expected
 
