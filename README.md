@@ -2,7 +2,7 @@
 
 ## Links and Resources:
 
-- [Lab 2 Pull Request]()
+- [Lab 2 Pull Request](https://github.com/daveeS987/math-series/pull/1)
 
 ## Overview
 
