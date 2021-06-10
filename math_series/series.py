@@ -6,10 +6,8 @@ def fibonacci_recursive(num):
 
     if type(num) != int or num < 0:
         return None
-    if num == 0:
-        return 0
-    if num == 1:
-        return 1
+    if num <= 1:
+        return num
 
     return fibonacci_recursive(num - 1) + fibonacci_recursive(num - 2)
 
@@ -20,10 +18,8 @@ def fibonacci_iterative(num):
     """
     if type(num) != int or num < 0:
         return None
-    if num == 0:
-        return 0
-    if num == 1:
-        return 1
+    if num <= 1:
+        return num
 
     prev = 0
     current = 1
