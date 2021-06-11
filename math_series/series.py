@@ -82,7 +82,7 @@ def lucas_iterative(num):
 # -------------- Sum_Series --------------
 
 
-def sum_series_recursive(num, a=0, b=1):
+def sum_series_recursive(num, first=0, second=1):
     """
     should return the nth value in the series
     the series will start with a and second number will be b
@@ -91,23 +91,23 @@ def sum_series_recursive(num, a=0, b=1):
     if type(num) != int or num < 0:
         return None
     if num == 0:
-        return a
+        return first
     if num == 1:
-        return b
+        return second
 
-    return sum_series_recursive(num - 1, a, b) + sum_series_recursive(num - 2, a, b)
+    return sum_series_recursive(num - 1, first, second) + sum_series_recursive(num - 2, first, second)
 
 
-def sum_series_iterative(num, a=0, b=1):
+def sum_series_iterative(num, first=0, second=1):
     if type(num) != int or num < 0:
         return None
     if num == 0:
-        return a
+        return first
     if num == 1:
-        return b
+        return second
 
-    prev = a
-    current = b
+    prev = first
+    current = second
     up_next = 0
     count = num - 2
 
